@@ -80,6 +80,7 @@ public class SolitaireMy : MonoBehaviour
     void SolitaireDeal(){
         float yOffset = 0;
         float zOffset = 0.03f;
+   
         foreach(string card in deck){
             GameObject newCard = Instantiate(CardPrefab, new Vector3(transform.position.x, transform.position.y + yOffset,  transform.position.z + zOffset), Quaternion.identity);
             newCard.name = card;
